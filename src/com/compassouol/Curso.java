@@ -12,6 +12,15 @@ public class Curso {
         this.tempo = new Tempo(TP, TV);
     }
 
+    @Override
+    public String toString() {
+        return
+                "Nome do curso = " + nome +
+                ",\nQuanto foi completo (%) = " + feito+"%" +
+                ",\nCurso finalizado = " + pronto +
+                ",\n"+ tempo;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -26,14 +35,13 @@ public class Curso {
 
     public void setFeito(int feito) {
         this.feito = feito;
+        if(feito == 100){
+            this.pronto = true;
+        }
     }
 
     public boolean isPronto() {
         return pronto;
-    }
-
-    public void setPronto(boolean pronto) {
-        this.pronto = pronto;
     }
 
     public Tempo getTempo() {

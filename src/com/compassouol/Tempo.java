@@ -15,7 +15,7 @@ public class Tempo {
 
     @Override
     public String toString() {
-        return "Tempo:\n" +
+        return
                 "Tempo total previsto para a conclusão do curso = " + valorLegivel(tempoPrevisto) +
                 ",\nTempo total de videos = " + valorLegivel(tempoDeVideo) +
                 ",\nTempo utilizado para o curso = " + valorLegivel(tempoDecorridoReal) +
